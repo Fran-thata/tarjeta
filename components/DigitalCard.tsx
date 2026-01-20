@@ -2,11 +2,11 @@ import React from 'react';
 
 export const DigitalCard: React.FC = () => {
   return (
-    <div className="w-full max-w-[320px] mx-auto p-4">
+    <div className="w-full max-w-[300px] mx-auto p-4">
       <div className="bg-white rounded-[24px] shadow-[0_10px_30px_rgba(0,0,0,0.15)] overflow-hidden">
         
-        {/* Header Image */}
-        <div className="w-full aspect-[3/4] relative">
+        {/* Header Image - Changed to aspect-square to reduce height */}
+        <div className="w-full aspect-square relative">
           <img 
             src="https://res.cloudinary.com/ddpujsrsg/image/upload/v1768584740/WhatsApp_Image_2026-01-16_at_17.47.56_chhxoh.jpg" 
             alt="Foto de Fran Gales" 
