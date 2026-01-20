@@ -23,11 +23,11 @@ export const DigitalCard: React.FC = () => {
 
         {/* Dark Blue Info Section */}
         <div className="bg-[#0b2744] py-6 px-6 text-center">
-          <h2 className="text-white text-base font-medium mb-2.5">
-            Estrategia y visibilidad moderna
+          <h2 className="text-white text-base font-medium mb-3.5">
+            Estrategia de visibilidad para negocios y profesionales
           </h2>
           <p className="text-white text-sm font-light leading-relaxed opacity-90">
-            Mejoro tu imagen corporativa y facilito una conexión más cercana con clientes y contactos en un solo click.
+            Mejoro tu presencia online con una solución clara y práctica que convierte interés en oportunidades reales.
           </p>
         </div>
 
