@@ -2,7 +2,7 @@ import React from 'react';
 
 export const DigitalCard: React.FC = () => {
   return (
-    <div className="w-full max-w-[380px] mx-auto p-4">
+    <div className="w-full max-w-[340px] mx-auto p-4">
       <div className="bg-white rounded-[24px] shadow-[0_10px_30px_rgba(0,0,0,0.15)] overflow-hidden">
         
         {/* Header Image */}
@@ -23,7 +23,7 @@ export const DigitalCard: React.FC = () => {
 
         {/* Dark Blue Info Section */}
         <div className="bg-[#0b2744] py-6 px-6 text-center">
-          <h2 className="text-white text-base font-medium mb-3.5">
+          <h2 className="text-white text-base font-medium mb-3">
             Estrategia de visibilidad para negocios y profesionales
           </h2>
           <p className="text-white text-sm font-light leading-relaxed opacity-90">
