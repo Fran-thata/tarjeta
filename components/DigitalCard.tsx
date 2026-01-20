@@ -2,7 +2,7 @@ import React from 'react';
 
 export const DigitalCard: React.FC = () => {
   return (
-    <div className="w-full max-w-[340px] mx-auto p-4">
+    <div className="w-full max-w-[320px] mx-auto p-4">
       <div className="bg-white rounded-[24px] shadow-[0_10px_30px_rgba(0,0,0,0.15)] overflow-hidden">
         
         {/* Header Image */}
