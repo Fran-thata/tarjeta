@@ -39,7 +39,7 @@ export const DigitalCard: React.FC = () => {
             <div className="flex gap-3">
               {/* Web */}
               <a
-                href="https://masreseñas.es"
+                href="https://masclientes.vip"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 bg-[#bfdbfe] text-[#1e3a8a] rounded-xl py-3 px-2 flex flex-row items-center justify-center gap-2 hover:opacity-90 transition-all shadow-md group"
