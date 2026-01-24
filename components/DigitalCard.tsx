@@ -4,7 +4,7 @@ export const DigitalCard: React.FC = () => {
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-between py-12 px-4 text-white overflow-hidden relative bg-[#0b2744]">
       
-      {/* Animation Styles - Subtle balance */}
+      {/* Animation Styles */}
       <style>{`
         @keyframes balance {
           0%, 100% { transform: rotate(0deg); }
@@ -13,6 +13,13 @@ export const DigitalCard: React.FC = () => {
         }
         .animate-balance {
           animation: balance 2.5s ease-in-out infinite;
+        }
+        @keyframes border-spin {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+        .animate-border-spin {
+          animation: border-spin 3s linear infinite;
         }
       `}</style>
 
@@ -39,12 +46,12 @@ export const DigitalCard: React.FC = () => {
           Fran Gales
         </h1>
 
-        {/* Text Content - Moved Here */}
-        <div className="px-4 opacity-90 mb-10 text-center">
-           <h3 className="text-sm font-semibold text-white leading-snug mb-2">
+        {/* Text Content - Larger Font Sizes */}
+        <div className="px-2 opacity-95 mb-10 text-center">
+           <h3 className="text-lg font-bold text-white leading-tight mb-3">
              Estrategia de visibilidad para negocios y profesionales
            </h3>
-           <p className="text-[11px] text-gray-300 font-light leading-relaxed max-w-[280px] mx-auto">
+           <p className="text-sm text-gray-300 font-normal leading-relaxed max-w-[320px] mx-auto">
              Mejoro tu presencia online con una solución clara y práctica que convierte interés en oportunidades reales.
            </p>
         </div>
@@ -52,15 +59,21 @@ export const DigitalCard: React.FC = () => {
         {/* Buttons Row */}
         <div className="flex flex-row w-full gap-2.5 justify-center items-stretch h-12 mb-10">
           
-          {/* Web - Left */}
+          {/* Web - Left (with Gold LED Border) */}
           <a
             href="https://masclientes.vip"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 bg-[#16304b] border border-white/10 hover:bg-[#1f3f61] rounded-xl flex items-center justify-center gap-2 transition-all active:scale-95 shadow-lg backdrop-blur-sm"
+            className="flex-1 relative rounded-xl overflow-hidden p-[2px] shadow-lg active:scale-95 transition-all group"
           >
-            <span className="text-base">🌐</span>
-            <span className="text-[10px] font-medium text-white leading-tight">Ver web</span>
+            {/* Animated Gold Gradient Background */}
+            <div className="absolute inset-[-200%] bg-[conic-gradient(from_0deg,transparent_0_300deg,#FFD700_360deg)] animate-border-spin"></div>
+            
+            {/* Inner Content */}
+            <div className="relative w-full h-full bg-[#16304b] hover:bg-[#1f3f61] rounded-[10px] flex items-center justify-center gap-2 transition-colors">
+              <span className="text-base">🌐</span>
+              <span className="text-[10px] font-medium text-white leading-tight">Ver web</span>
+            </div>
           </a>
 
           {/* WhatsApp - Center, Light & Subtle Balance */}
@@ -76,20 +89,26 @@ export const DigitalCard: React.FC = () => {
             <span className="text-[10px] font-bold leading-tight text-center">WhatsApp</span>
           </a>
 
-          {/* LinkedIn - Right */}
+          {/* LinkedIn - Right (with Gold LED Border) */}
           <a
             href="https://www.linkedin.com/in/fran-gales-608682238/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 bg-[#16304b] border border-white/10 hover:bg-[#1f3f61] rounded-xl flex items-center justify-center gap-1.5 transition-all active:scale-95 shadow-lg backdrop-blur-sm"
+            className="flex-1 relative rounded-xl overflow-hidden p-[2px] shadow-lg active:scale-95 transition-all group"
           >
-             <div className="w-4 h-4 bg-white rounded-[2px] flex items-center justify-center flex-shrink-0">
-                <svg viewBox="0 0 24 24" fill="#0b2744" className="w-3.5 h-3.5">
-                  <path d="M4.98 3.5a2.5 2.5 0 110 5 2.5 2.5 0 010-5zM3 9h4v12H3zm7 0h3.7v1.8h.1c.5-.9 1.7-1.8 3.5-1.8C20.9 9 23 11 23 15v6h-4v-5.3c0-1.3-.02-3-1.9-3-1.9 0-2.2 1.4-2.2 2.9V21h-4z"/>
-                </svg>
-             </div>
-             <div className="flex flex-col leading-[0.8]">
-               <span className="text-[9px] font-bold text-left text-white">LinkedIn</span>
+             {/* Animated Gold Gradient Background */}
+             <div className="absolute inset-[-200%] bg-[conic-gradient(from_0deg,transparent_0_300deg,#FFD700_360deg)] animate-border-spin"></div>
+
+             {/* Inner Content */}
+             <div className="relative w-full h-full bg-[#16304b] hover:bg-[#1f3f61] rounded-[10px] flex items-center justify-center gap-1.5 transition-colors">
+               <div className="w-4 h-4 bg-white rounded-[2px] flex items-center justify-center flex-shrink-0">
+                  <svg viewBox="0 0 24 24" fill="#0b2744" className="w-3.5 h-3.5">
+                    <path d="M4.98 3.5a2.5 2.5 0 110 5 2.5 2.5 0 010-5zM3 9h4v12H3zm7 0h3.7v1.8h.1c.5-.9 1.7-1.8 3.5-1.8C20.9 9 23 11 23 15v6h-4v-5.3c0-1.3-.02-3-1.9-3-1.9 0-2.2 1.4-2.2 2.9V21h-4z"/>
+                  </svg>
+               </div>
+               <div className="flex flex-col leading-[0.8]">
+                 <span className="text-[9px] font-bold text-left text-white">LinkedIn</span>
+               </div>
              </div>
           </a>
 
