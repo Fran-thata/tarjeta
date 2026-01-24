@@ -35,9 +35,19 @@ export const DigitalCard: React.FC = () => {
         </div>
 
         {/* Name */}
-        <h1 className="text-3xl font-normal tracking-wide uppercase mb-12 text-center text-white drop-shadow-md">
+        <h1 className="text-3xl font-normal tracking-wide uppercase mb-6 text-center text-white drop-shadow-md">
           Fran Gales
         </h1>
+
+        {/* Text Content - Moved Here */}
+        <div className="px-4 opacity-90 mb-10 text-center">
+           <h3 className="text-sm font-semibold text-white leading-snug mb-2">
+             Estrategia de visibilidad para negocios y profesionales
+           </h3>
+           <p className="text-[11px] text-gray-300 font-light leading-relaxed max-w-[280px] mx-auto">
+             Mejoro tu presencia online con una solución clara y práctica que convierte interés en oportunidades reales.
+           </p>
+        </div>
 
         {/* Buttons Row */}
         <div className="flex flex-row w-full gap-2.5 justify-center items-stretch h-12 mb-10">
@@ -55,7 +65,7 @@ export const DigitalCard: React.FC = () => {
 
           {/* WhatsApp - Center, Light & Subtle Balance */}
           <a
-            href="https://wa.me/34641066377?text=Hola%20Fran%2C%20he%20visto%20tu%20tarjeta%20digital."
+            href="https://wa.me/34643871290?text=Hola%20Fran%2C%20he%20visto%20tu%20tarjeta%20digital."
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 bg-[#dbebf9] text-[#0b2744] hover:bg-white rounded-xl flex items-center justify-center gap-2 transition-all shadow-[0_0_20px_rgba(255,255,255,0.2)] active:scale-95 border border-white/50 animate-balance"
@@ -79,7 +89,6 @@ export const DigitalCard: React.FC = () => {
                 </svg>
              </div>
              <div className="flex flex-col leading-[0.8]">
-               <span className="text-[7px] opacity-80 text-left text-white">Conectar en</span>
                <span className="text-[9px] font-bold text-left text-white">LinkedIn</span>
              </div>
           </a>
@@ -87,7 +96,7 @@ export const DigitalCard: React.FC = () => {
         </div>
       </div>
 
-      {/* Footer (Simplified) */}
+      {/* Footer */}
       <div className="w-full max-w-sm z-10 text-center pb-8">
         <div>
           <a href="https://masclientes.vip" target="_blank" rel="noopener noreferrer" className="block text-white font-bold text-lg tracking-wide hover:underline decoration-1 underline-offset-4">
